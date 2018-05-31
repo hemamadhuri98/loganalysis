@@ -52,12 +52,11 @@ we need
   ###### -articles
   ###### -authors
   ###### -log
-## First question in this project is What are the most popular three articles of all time? 
+# First question in this project is What are the most popular three articles of all time? 
   #### -I created view named fav_articles
-  ##### query:
-   ## First question in this project is Who are the most popular article authors of all time?
+# First question in this project is Who are the most popular article authors of all time?
   #### -I created view named top_authors
-   ## First question in this project is On which days did more than 1% of requests lead to errors?
+# First question in this project is On which days did more than 1% of requests lead to errors?
 #### I created three views to find errors named dayerrors
    #### For running all these queries we need to create python program and I created project.py as my python file
 #### In this firstly,
