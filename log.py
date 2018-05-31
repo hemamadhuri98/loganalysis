@@ -72,7 +72,7 @@ def cal(sql):
         db.close()
         return car
     except Exception:
-        print("Unable to connect to the database")
+        print("Database is unable to connect")
 
 if __name__ == '__main__':
     fav_articles()
