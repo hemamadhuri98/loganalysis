@@ -1,10 +1,9 @@
 # import Postgresql library
 import psycopg2
 
-# Query 1: What are the most popular three articles of all time?
-
 
 def fav_articles():
+    # Query 1: What are the most popular three articles of all time?
     sql = """select title, count(title) as views
             from articles, log
             where log.path = concat('/article/', articles.slug)
@@ -39,10 +38,10 @@ def top_authors():
     for b in result:
         print('* ' + b[0] + ' :: ' + str(b[1]) + "views")
         l += 1
-# query 3: On which days did more than 1% of requests lead to errors?
 
 
 def dayerrors():
+    # query 3: On which days did more than 1% of requests lead to errors?
     sql = """
         select total.day,
           round(((errors.error_requests*1.0) / total.requests), 3) as percent
