@@ -2,6 +2,8 @@
 import psycopg2
 
 # Query 1: What are the most popular three articles of all time?
+
+
 def fav_articles():
     sql = """select title, count(title) as views
             from articles, log
@@ -15,9 +17,11 @@ def fav_articles():
     for a in first_three:
         print('-> *' + a[0] + '* :: ' + str(a[1]) + "views")
 # Problem 2: Who are the most popular article authors of all time?
+
+
 def top_authors():
     # query 2: Who are the most popular article authors of all time?
-    sql="""
+    sql = """
         select authors.name, count(title) as num
         from authors
         join articles
@@ -36,8 +40,10 @@ def top_authors():
         print('* ' + b[0] + ' :: ' + str(b[1]) + "views")
         l += 1
 # query 3: On which days did more than 1% of requests lead to errors?
+
+
 def dayerrors():
-    sql="""
+    sql = """
         select total.day,
           round(((errors.error_requests*1.0) / total.requests), 3) as percent
         from (
@@ -61,12 +67,13 @@ def dayerrors():
     for c in result:
         print(c[0].strftime('%d %B %Y') + " : " +
               str(round(c[1]*100, 1)) + "%" + " errors")
-        
+
+
 def cal(sql):
-   """cal takes a string as a parameter.  It executes the sql
+    """cal takes a string as a parameter. It executes the sql
     and returns the output as a list of tuples."""
     try:
-        db = psycopg2.connect(dbname = "news")
+        db = psycopg2.connect(dbname="news")
         c = db.cursor()
         c.execute(sql)
         car = c.fetchall()
