@@ -53,12 +53,12 @@ we need
   ###### -authors
   ###### -log
 #### First question in this project is What are the most popular three articles of all time? 
-  #### -I created view named fav_articles
+  ###### -I created view named fav_articles
 #### First question in this project is Who are the most popular article authors of all time?
-  #### -I created view named top_authors
+  ###### -I created view named top_authors
 #### First question in this project is On which days did more than 1% of requests lead to errors?
-#### I created three views to find errors named dayerrors
-   #### For running all these queries we need to create python program and I created log.py as my python file
+  ###### I created three views to find errors named dayerrors
+#### For running all these queries we need to create python program and I created log.py as my python file
 ## In this firstly,
   ###### -import psycopg2
   ###### -Then database connection
