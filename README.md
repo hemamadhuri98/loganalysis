@@ -78,4 +78,3 @@ we need
 7. Load/import the database by entering the command
    **psql -d news -f newsdata.sql
 8. Run the python file by entering the command **python log.py
-
