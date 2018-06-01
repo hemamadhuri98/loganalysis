@@ -15,10 +15,10 @@ def fav_articles():
     # Display output for Problem 1
     print('"""Top three articles in the data"""')
     for a in first_three:
-        print('-> *' + a[0] + '* :: ' + str(a[1]) + "views")
+        print('-> *' + a[0] + '* :: ' + str(a[1]) + " views")
+
+
 # Problem 2: Who are the most popular article authors of all time?
-
-
 def top_authors():
     # query 2: Who are the most popular article authors of all time?
     sql = """
@@ -37,7 +37,7 @@ def top_authors():
     print('\n ***top three authors***')
     l = 1
     for b in result:
-        print('* ' + b[0] + ' :: ' + str(b[1]) + "views")
+        print('* ' + b[0] + ' :: ' + str(b[1]) + " views")
         l += 1
 
 
