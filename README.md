@@ -68,12 +68,14 @@ we need
   ###### -Then after creating and select queries I fetched the data with this c object
   ###### -Then close connections
 # To run the file:
-1. Ensure the setup environment is as specified with all the required installs
+1. Ensure the setup environment is as specified with all the required installs.
 2. Download the project files and ensure they are all in one folder.
-3. Download the database file newsdata.sql and put in the same folder named vagrant.
+3. Download the database file newsdata.sql and put in the same folder
+   named vagrant.
 4. Open the terminal from the folder.
 5. Run the VM by entering the command vagrant up.
 6. Access the VM by entering the command vagrant ssh.
-7. Load/import the database by entering the command psql -d news -f newsdata.sql
-8. Run the python file by entering the command **python log.py  
+7. Load/import the database by entering the command
+   **psql -d news -f newsdata.sql
+8. Run the python file by entering the command **python log.py
 
